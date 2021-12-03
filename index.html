@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Kemayou Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a053757709.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/kevindev_color_black.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Accueil</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Compétences</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">À propos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Mes projets</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Bonjour, Je suis <strong>Kevin Kemayou</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Développeur Full-Stack
+      </p>
+      <img
+        src="images/kevin.jpg"
+        alt="une photo de Kevin Kemayou"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills">Mes compétences</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>HTML</h3>
+          <h3>Express</h3>
+          <h3>MongoDB</h3>
+          <h3>mySQL</h3>
+        </div>
+        <!-- / skill -->
+
+        <div class="skill">
+          <h3>CSS</h3>
+          <h3>Bootstrap</h3>
+          <h3>Tailwinds</h3>
+          <h3>Node.js</h3>
+        </div>
+        <!-- / skill -->
+
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <h3>React</h3>
+          <h3>React Native</h3>
+        </div>
+        <!-- / skill -->
+      </div>
+      <!-- skills -->
+
+      <a href="#work" class="btn">Mes projets</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Qui je suis</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Développeur Full-Stack Junior habitant à Paris
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Je suis un jeune développeur web à la recherche d'expériences et de
+          savoir pour progresser et améliorer mes compétences !
+        </p>
+        <p>
+          J'ai suivi différentes formations en ligne que ce soit en Français ou
+          en Anglais, qui traitent principalement du développement Front-End
+          (Que ce soit sur Scrimba, SoloLearn, Open Class Room et Free Code
+          Camp) et je suis actuellement en formation de développeur web et web
+          mobile chez Konexio avec lesquels j'ai déjà pu effectuer différents
+          projets (seul ou en équipe), que ce soit en front end ou en back end
+          avec différents langages et bibliothèques. (HTML, CSS, JavaScript,
+          React, Bootstrap, Node.js ...).
+        </p>
+      </div>
+
+      <img
+        src="images/kevin2.jpg"
+        alt="Moi qui suis entrain de coder"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- Mes projets -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">Mes projets</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Voici les projets sur lesquels j'ai travaillé
+      </p>
+
+      <div class="portfolio">
+        <div class="carousel">
+          <div class="carousel-item carousel-item-visible">
+            <a href="https://github.com/Hozzen/Piano-Course-Layout"
+              ><img src="images/piano-course.JPG"
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/plinth-projet/plinth"
+              ><img src="images/plinth.jpg"
+            /></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://github.com/Hozzen/BlackJack-Space421">
+              <img src="images/black-jack.JPG"
+            /></a>
+          </div>
+
+          <div class="carousel-actions">
+            <button id="carousel-button-prev" aria-label="Previous Slide">
+              <
+            </button>
+            <button id="carousel-button-next" aria-label="Next Slide">></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:kemayou.ke@gmail.com" class="footer__link"
+        >kemayou.ke@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://github.com/Hozzen" class="social-list__link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/k%C3%A9vin-kemayou/"
+            class="social-list__link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
